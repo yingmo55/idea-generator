@@ -1,4 +1,4 @@
-import ideaLogs from "./ideas";
+import ideaLogs from "./ideas.js";
 
 const idea = document.getElementById('card-text');
 const ideaButton = document.getElementById('ideaGenerator');
@@ -8,7 +8,7 @@ const doNotShowBtn = document.getElementById('doNotShow');
 const doNotShow = [];
 let lastNum;
 function randomIdea(){
-    if (doNotShow.length === ideaLogs.length) {
+    if (doNotShow.length === Object.keys(ideaLogs).length) {
         return 'Actually, I am out of ideas. Do you have an idea to show?'
     }
     let randomNum = Math.floor(Math.random() * Object.keys(ideaLogs).length)
