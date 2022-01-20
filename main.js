@@ -9,7 +9,8 @@ const ideaLogs = {
     2: 'make a photography website with slide shows',
     3: 'Make a landing page',
     4: 'Make a to-do list app',
-
+    5: 'make something using an API',
+    
 }
 
 const doNotShow = [];
