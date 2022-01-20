@@ -1,17 +1,9 @@
+import ideaLogs from "./ideas";
+
 const idea = document.getElementById('card-text');
 const ideaButton = document.getElementById('ideaGenerator');
 const ideaHeader = document.getElementById('ideaHeader');
 const doNotShowBtn = document.getElementById('doNotShow');
-
-const ideaLogs = {
-    0: 'make a random idea generator',
-    1: 'make a calculator',
-    2: 'make a photography website with slide shows',
-    3: 'Make a landing page',
-    4: 'Make a to-do list app',
-    5: 'make something using an API',
-    
-}
 
 const doNotShow = [];
 let lastNum;
