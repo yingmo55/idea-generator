@@ -3,6 +3,9 @@ If you want to practice your front-end skills, but you don't know where to start
 
 It is currently a work in progress. I might open pull request for adding more ideas from people in the future.
 
+## Langauge and Framework used
++ HTML and JavaScript, with very minimal custom CSS.
++ Bootstrap
 
 ## Roadmap
 + functional "do not show again" button
