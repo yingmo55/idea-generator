@@ -1,5 +1,6 @@
 import ideaLogs from "./ideas.js";
 
+
 const idea = document.getElementById('card-text');
 const ideaButton = document.getElementById('ideaGenerator');
 const ideaHeader = document.getElementById('ideaHeader');
@@ -10,19 +11,19 @@ let lastNum;
 let outOfIdea = false;
 
 function randomIdea(){
-    if (doNotShow.length === Object.keys(ideaLogs).length) {
+    if (doNotShow.length === ideaLogs.length) {
         outOfIdea = true;
         ideaButton.innerHTML = "Out of Idea";
         ideaButton.style.pointerEvents = 'none';
         doNotShowBtn.style.display = 'none';
-        return 'Actually, I am out of ideas. Maybe try looking up "frontend portfolio projects"?'
+        return 'I am out of ideas. Maybe try looking up "frontend portfolio projects"?'
     }
-    let randomNum = Math.floor(Math.random() * Object.keys(ideaLogs).length)
+    let randomNum = Math.floor(Math.random() * ideaLogs.length)
     while (lastNum === randomNum && doNotShow.includes(randomNum)) {
-        randomNum = Math.floor(Math.random() * Object.keys(ideaLogs).length);
+        randomNum = Math.floor(Math.random() * ideaLogs.length);
     }
     while (doNotShow.includes(randomNum)) {
-        randomNum = Math.floor(Math.random() * Object.keys(ideaLogs).length);
+        randomNum = Math.floor(Math.random() * ideaLogs.length);
     }
     // console.log(`random number: ${randomNum}, last number: ${lastNum}`);
     lastNum = randomNum;
